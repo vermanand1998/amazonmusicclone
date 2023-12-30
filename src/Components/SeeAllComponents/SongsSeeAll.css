@@ -1,0 +1,139 @@
+.allportrait-title {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding-top: 45px;
+  justify-content: space-between;
+}
+
+.allportrait-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.allportrait-data {
+  position: relative;
+  height: 241px;
+  width: 242px;
+}
+
+.allportrait-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.allportrait-name {
+  padding-top: 80px;
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.card-heading {
+  padding: 15px 15px;
+  color: white;
+  font-weight: bold;
+  /* display: flex; */
+  width: 85%;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.p-tag {
+  padding: 0px 10px;
+  color: black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 81%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.allportrait-data:hover .overlay {
+  opacity: 1;
+}
+
+.icon1,
+.icon3 {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icon2 {
+  color: white;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+/* For screen widths up to 768px */
+
+@media (max-width: 768px) {
+  .allportrait-title {
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  .allportrait-img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .allportrait-name {
+    padding-top: 75px;
+    padding-left: 12px;
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  .allportrait-card {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)) !important;
+    gap: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+  }
+
+  .allportrait-data {
+    height: 150px;
+    width: 180px;
+  }
+
+  .card-heading {
+    padding: 5px 0px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .overlay {
+    display: none;
+  }
+}

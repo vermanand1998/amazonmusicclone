@@ -1,0 +1,135 @@
+.music-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(15, 17, 17, 0.6);
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0px;
+}
+
+.song-details {
+  display: flex !important;
+  align-items: center !important;
+  width: 15%;
+}
+
+.album-cover {
+  width: 70px !important;
+  height: 70px !important;
+  object-fit: cover !important;
+  margin-right: 10px !important;
+}
+
+.song-heading {
+  font-size: 20px;
+  padding-top: 5px;
+  overflow: hidden !important;
+}
+
+.song-info {
+  color: white;
+}
+
+.control-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: white;
+}
+
+.control-icon-set {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: white;
+}
+
+.control-icon-volume {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.play-pause {
+  color: white;
+}
+
+.player-controls {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  display: flex !important;
+  color: white !important;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 3px !important;
+  background-color: #333;
+  margin: 10 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #af594c;
+  color: white;
+}
+
+.volume-slider {
+  width: 100px;
+  height: 10px;
+}
+
+/* Media Quries Class */
+
+@media (max-width: 768px) {
+  .music-player {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .song-info {
+    display: none;
+  }
+
+  .volume-slider {
+    display: none;
+  }
+
+  .song-details {
+    width: 25%;
+  }
+
+  .album-cover {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  /* .song-heading {
+    font-size: 16px;
+  } */
+
+  .control-icon,
+  .control-icon-set,
+  .play-pause {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  .control-icon-volume {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #232323;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-bg {
+  background-color: transparent;
+}
+.navbar-brand {
+  font-size: 35px;
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+.navbar-nav .nav-link.active {
+  color: #FF9900;
+}
+.navbar-form .form-control {
+  border-color: #FF9900;
+  color: white;
+  background-color: #333;
+}
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: #333;
+}
+.navbar-nav .nav-item .dropdown-item {
+  color: white;
+}
+.navbar-nav .nav-item .dropdown-item:hover {
+  background-color: #FF9900;
+  color: black;
+}
+.nav-icons {
+  font-size: 2.5rem;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  height: 36px;
+  width: 35px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-radius: 0px 15px 15px 0px;
+  padding-right: 10px;
+}
+.search-input {
+  border: none;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.right-div {
+  display: flex;
+  align-items: center;
+}
+
+.main-search a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+/* To Fix Header */
+div.right-div .dropdown-menu.show {
+  margin-left: -170px !important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: 28px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .nav-icons {
+    font-size: 2rem;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .search-box {
+    margin-right: 10px;
+  }
+
+  .search-icon {
+    height: 36px;
+    width: 32px;
+    padding-right: 8px;
+    margin-right: 10px;
+  }
+}

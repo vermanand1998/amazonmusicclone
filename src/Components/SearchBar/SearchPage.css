@@ -1,0 +1,80 @@
+/* .search-heading-mood {
+  margin-top: 70px;
+}
+.mood-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mood-button {
+  flex: 0 0 calc(20% - 20px);
+  height: 70px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.happy {
+  background: linear-gradient(to right, #64707d, #3c4852, #007bff);
+}
+
+.sad {
+  background: linear-gradient(to right, #f8d02f, #ff8c00, #ff5722);
+}
+
+.romantic {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.excited {
+  background: linear-gradient(to right, #9f7aea, #ff77aa);
+}
+
+.mood-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.grid-item-title {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+} */

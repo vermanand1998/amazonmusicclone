@@ -1,0 +1,200 @@
+.romantic-songs-carousel {
+  width: 150%;
+  margin-left: 80px;
+}
+
+.romantic-songs-title {
+  text-align: start;
+  padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.romantic-songs-title a {
+  text-decoration: none;
+}
+.song-card {
+  position: relative;
+  height: 241px;
+  width: 242px;
+  margin-bottom: 10px;
+}
+
+.carousel .song-card img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.romantic-songs-carousel a {
+  text-decoration: none;
+}
+
+.romantic-songs-carousel .carousel.carousel-slider {
+  margin-left: -48rem;
+}
+
+.romantic-songs-carousel .carousel .control-prev.control-arrow {
+  margin-left: 43rem;
+}
+
+.romantic-songs-carousel .carousel .control-next.control-arrow {
+  margin-right: 4.5rem;
+}
+
+.romantic-songs-heading {
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.romantic-song-card-heading {
+  padding: 0px 10px 0px 0px;
+  color: white;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.description {
+  padding: 0px 10px 0px 0px;
+  color: white;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.control-dots {
+  display: none;
+}
+
+.see-all-button {
+  display: flex;
+  margin: 5px;
+  background-color: black;
+}
+
+.see-all-btns {
+  border-radius: 25px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  padding: 2px 25px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* :hover */
+
+.hover-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.romantic-song-overlay {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 194px;
+  width: 194px;
+  border-radius: 10px;
+}
+
+.song-card:hover .romantic-song-overlay {
+  opacity: 1;
+}
+
+.icon-plus,
+.icon-dots {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icon-play {
+  color: white;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .romantic-songs-carousel {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .romantic-songs-title {
+    padding-top: 20px;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .song-card {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+  }
+
+  .song-card-image {
+    height: 120px;
+    width: 120px;
+  }
+
+  .carousel .song-card img {
+    border-radius: 10px;  
+  }
+
+  .carousel .slider-wrapper {
+    margin-left: -20px;
+  }
+
+  .romantic-songs-carousel .carousel.carousel-slider {
+    margin-left: 0;
+  }
+
+  .romantic-songs-carousel .carousel .control-prev.control-arrow {
+    margin-left: 0;
+  }
+
+  .romantic-songs-carousel .carousel .control-next.control-arrow {
+    margin-right: 0;
+  }
+
+  .romantic-songs-heading {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+
+  .romantic-song-card-heading {
+    padding: 0;
+    margin-top: -15px;
+    font-size: 14px;
+  }
+
+  .description {
+    padding: 0;
+    margin-top: -5px;
+    font-size: 10px;
+  }
+
+  .see-all-button {
+    margin: 10px;
+  }
+
+  .romantic-song-overlay {
+    display: none;
+  }
+}

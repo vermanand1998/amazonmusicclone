@@ -1,0 +1,368 @@
+/* .trending-container {
+  text-align: start;
+  padding-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.song-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 200px !important;
+  width: 200px !important;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.song-image {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.song-title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.song-artists {
+  margin-top: 1px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.song-item:hover .play-icon {
+  opacity: 1;
+}
+
+.trending-heading {
+  margin-left: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.custom-slider {
+  width: 100%;
+}
+
+.slick-list {
+  width: 100%;
+}
+
+.slick-slide {
+  width: 100% !important;
+  margin-left: 0;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  z-index: 3;
+  background-color: black;
+  display: none;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+@media (max-width: 768px) {
+  .song-item {
+    width: calc(100% - 15px);
+    margin-left: 0;
+    margin-right: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 150px !important;
+    width: 100% !important;
+    overflow: hidden;
+    margin-bottom: 0px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .song-image {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+  }
+
+  .song-details {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .song-title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 15px;
+  }
+
+  .song-artists {
+    margin-top: 1px;
+    color: white;
+    font-size: 10px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: block;
+  }
+
+  .trending-heading {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+} */
+
+.trending-songs-carousel {
+  width: 150%;
+  margin-left: 80px;
+}
+
+.trending-songs-title {
+  text-align: start;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.romantic-songs-title a {
+  text-decoration: none;
+}
+.song-card {
+  position: relative;
+  height: 241px;
+  width: 242px;
+  margin-bottom: 10px;
+}
+
+.carousel .song-card img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.trending-songs-carousel a {
+  text-decoration: none;
+}
+
+.trending-songs-carousel .carousel.carousel-slider {
+  margin-left: -48rem;
+}
+
+.trending-songs-carousel .carousel .control-prev.control-arrow {
+  margin-left: 43rem;
+}
+
+.trending-songs-carousel .carousel .control-next.control-arrow {
+  margin-right: 4.5rem;
+}
+
+.trending-songs-heading {
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.trending-song-card-heading {
+  padding: 0px 10px 0px 0px;
+  color: white;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.description {
+  padding: 0px 10px 0px 0px;
+  color: white;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.control-dots {
+  display: none;
+}
+
+.see-all-button {
+  display: flex;
+  margin: 5px;
+  background-color: black;
+}
+
+.see-all-btns {
+  border-radius: 25px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  padding: 2px 25px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* :hover */
+
+.hover-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.romantic-song-overlay {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 194px;
+  width: 194px;
+  border-radius: 10px;
+}
+
+.song-card:hover .romantic-song-overlay {
+  opacity: 1;
+}
+
+.icon-plus,
+.icon-dots {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icon-play {
+  color: white;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .trending-songs-title {
+    text-align: start;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .trending-songs-heading {
+    margin-left: 15px;
+    font-size: 25px;
+    padding-bottom: 25px;
+  }
+
+  .trending-songs-carousel {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .romantic-songs-title {
+    padding-top: 20px;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .song-card {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+  }
+
+  .song-card-image {
+    height: 120px;
+    width: 120px;
+  }
+
+  .carousel .song-card img {
+    border-radius: 10px;  
+  }
+
+  .carousel .slider-wrapper {
+    margin-left: -20px;
+  }
+
+  .trending-songs-carousel .carousel.carousel-slider {
+    margin-left: 0;
+  }
+
+  .trending-songs-carousel .carousel .control-prev.control-arrow {
+    margin-left: 0;
+  }
+
+  .trending-songs-carousel .carousel .control-next.control-arrow {
+    margin-right: 0;
+  }
+
+  /* .romantic-songs-heading {
+    margin-left: 15px;
+    font-size: 25px;
+  } */
+
+  .trending-song-card-heading {
+    padding: 0;
+    margin-top: -15px;
+    font-size: 14px;
+  }
+
+  .description {
+    padding: 0;
+    margin-top: -5px;
+    font-size: 10px;
+  }
+
+  .see-all-button {
+    margin: 10px;
+  }
+
+  .romantic-song-overlay {
+    display: none;
+  }
+}

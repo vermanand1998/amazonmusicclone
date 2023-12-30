@@ -1,0 +1,272 @@
+.adp-background {
+  background-color: black;
+}
+
+.adp-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: 76px;
+  margin-bottom: 20px;
+}
+
+.adp-image {
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.adp-content {
+  flex: 1;
+  color: white;
+  margin-top: 0px;
+}
+
+.adp-subtitle {
+  font-weight: bold;
+  color: aqua;
+}
+
+.adp-title {
+  font-size: 3rem;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.adp-tagline {
+  font-size: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.adp-play-button {
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+}
+
+.adp-icon-button {
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;  
+}
+
+.adp-play-button:hover {
+  background-color: greenyellow;
+}
+
+.adp-song-card {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border-bottom: 1px inset rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+
+.adp-song-card:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-bottom: 1px inset rgba(255, 255, 255, 0.15);
+}
+
+.adp-song-number {
+  font-size: 16px;
+  margin-right: 20px;
+  color: white;
+}
+
+.adp-song-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 0px;
+  position: relative;
+  width: 60%;
+}
+
+.adp-song-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.adp-song-text {
+  flex: 1;
+  color: white;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.sdp-additional-content {
+  display: flex;
+  align-items: center;
+}
+
+.adp-song-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  margin-left: 0px;
+  margin-right: 300px;
+  color: white;
+  width: 20%;
+}
+
+.adp-duration {
+  color: white;
+  margin-right: 200px;
+  width: 10%;
+}
+
+.adp-icons {
+  display: flex;
+  gap: 30px;
+  color: white;
+  margin-right: 30px;
+  width: 10%;
+ opacity: 1;
+}
+
+.adp-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.adp-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 14% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.adp-play-icon-inner {
+  font-size: 26px !important;
+  color: white !important;
+}
+
+.sdp-image-card:hover .adp-play-icon {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .adp-background {
+    overflow: hidden;
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: black;
+  }
+
+  .adp-card {
+    padding: 10px;
+  }
+
+  .adp-image {
+    width: 170px;
+    height: 170px;
+    margin-left: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .adp-play-button {
+    width: 80px;
+    height: 40px;
+  }
+
+  .adp-icon-button {
+    padding: 6px 10px;
+  }
+
+  .adp-song-number {
+    font-size: 15px;
+    margin-left: -25px;
+  }
+
+  .adp-song-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .adp-subtitle {
+    font-weight: bold;
+    color: aqua;
+    font-size: 10px;
+  }
+  
+  .adp-title {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  
+  .adp-tagline {
+    font-size: 1rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .adp-song-title {
+    font-size: 12px;
+    display: none;
+  }
+
+  .adp-duration {
+    font-size: 12px;
+    display: none;
+  }
+
+  .adp-icon {
+    font-size: 18px;
+    display: none;
+  }
+
+  .adp-play-icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+
+  .adp-play-icon-inner {
+    font-size: 16px;
+    display: none;
+  }
+
+}

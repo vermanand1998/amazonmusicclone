@@ -1,0 +1,153 @@
+.sdp-image-card {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border-bottom: 1px inset rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+
+.sdp-image-card:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-bottom: 1px inset rgba(255, 255, 255, 0.15);
+}
+
+.sdp-image-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: white;
+}
+
+.sdp-image-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 0px;
+  position: relative;
+  width: 60%;
+}
+
+.sdp-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.sdp-text-container {
+  flex: 1;
+  color: white;
+}
+
+.sdp-additional-content {
+  display: flex;
+  align-items: center;
+}
+
+.sdp-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 300px;
+  color: white;
+  width: 20%;
+}
+
+.sdp-duration {
+  color: white;
+  margin-right: 200px;
+  width: 10%;
+}
+
+.sdp-icons {
+  display: flex;
+  gap: 20px;
+  color: white;
+  margin-right: 50px;
+  width: 10%;
+}
+
+.sdp-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.play-icon-inner {
+  font-size: 26px;
+  color: white;
+}
+
+.sdp-image-card:hover .play-icon {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  
+  .sdp-image-card {
+    margin-left: 10px;
+  }
+
+  .sdp-image-number {
+    font-size: 14px;
+  }
+
+  .sdp-image-container {
+    width: 30%;
+  }
+
+  .sdp-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sdp-heading {
+    font-size: 12px;
+  }
+
+  .sdp-duration {
+    font-size: 12px;
+  }
+
+  .sdp-icons {
+    width: 30%;
+  }
+
+  .sdp-icon {
+    font-size: 18px;
+  }
+
+  .play-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .play-icon-inner {
+    font-size: 18px;
+  }
+}
